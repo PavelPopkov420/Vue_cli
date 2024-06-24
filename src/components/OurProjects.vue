@@ -1,0 +1,383 @@
+<template>
+    <div class="our-project">
+        
+    <section>
+        <div class="project container">
+            <div class="project__heading">
+                <h3 class="project__heading__title">
+                    Следите за нашими проектами
+                </h3>
+                <p class="project__heading__subtitle">
+                    Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы
+                </p>
+            </div>
+            <div class="project__products">
+                <div class="project__products__result">
+                    <img class="project__products__result__img-1" src="../assets/result1.jpg" alt="kitchen">
+                    <div class="project__products__result__element">
+                        <div class="project__products__result__element__text">
+                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                        </div>
+                        <button class="project__products__result__element__text__btn">
+                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="project__products__result">
+                    <img class="project__products__result__img-2" src="../assets/result2.jpg" alt="kitchen">
+                    <div class="project__products__result__element">
+                        <div class="project__products__result__element__text">
+                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                        </div>
+                        <button class="project__products__result__element__text__btn">
+                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="project__products__result">
+                    <img class="project__products__result__img" src="../assets/result3.jpg" alt="kitchen">
+                    <div class="project__products__result__element">
+                        <div class="project__products__result__element__text">
+                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                        </div>
+                        <button class="project__products__result__element__text__btn">
+                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="project__products__result">
+                    <img class="project__products__result__img" src="../assets/result4.jpg" alt="kitchen">
+                    <div class="project__products__result__element">
+                        <div class="project__products__result__element__text">
+                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                        </div>
+                        <button class="project__products__result__element__text__btn">
+                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="counter">
+            <div class="counter__meta container">
+                <div class="counter__meta__items">
+                    <h2 class="counter__meta__items__title">12</h2>
+                    <p class="counter__meta__items__subtitle">Лет опыта</p>
+                </div>
+                <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
+                <div class="counter__meta__items">
+                    <h2 class="counter__meta__items__title">85</h2>
+                    <p class="counter__meta__items__subtitle">Успешных проектов</p>
+                </div>
+                <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
+                <div class="counter__meta__items">
+                    <h2 class="counter__meta__items__title">15</h2>
+                    <p class="counter__meta__items__subtitle">Проектов в работе</p>
+                </div>
+                <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
+                <div class="counter__meta__items">
+                    <h2 class="counter__meta__items__title">95</h2>
+                    <p class="counter__meta__items__subtitle">Счастливых клиентов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="blog container">
+            <div class="blog__heading">
+                <h2 class="blog__heading__title">
+                    Статьи <span class="symbol">&</span> Новости
+                </h2>
+                <p class="blog__heading__subtitle">
+                    Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы
+                </p>
+            </div>
+
+            <div class="blog__info">
+                <div class="blog__info__items">
+                    <img src="../assets/blog_Image.png" alt="kitchen" class="blog__info__items__img">
+                    <h3 class="blog__info__items__title">Создадим лучший макет перепланировки</h3>
+                    <div class="blog__info__items__subtitle">
+                        <p class="blog__info__items__subtitle__text">26 Декабрь,2022 </p>
+                        <button class="blog__info__items__subtitle__btn"><img class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg" alt="vector"></button>
+                    </div>
+                </div>
+                <div class="blog__info__items">
+                    <img src="../assets/blog_Image2.png" alt="kitchen" class="blog__info__items__img">
+                    <h3 class="blog__info__items__title">Лучшие интерьерные идеи по низкой цене</h3>
+                    <div class="blog__info__items__subtitle">
+                        <p class="blog__info__items__subtitle__text">22 Декабрь,2022</p>
+                        <button class="blog__info__items__subtitle__btn"><img class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg" alt="vector"></button>
+                    </div>
+                </div>
+                <div class="blog__info__items">
+                    <img src="../assets/blog_Image3.png" alt="kitchen" class="blog__info__items__img">
+                    <h3 class="blog__info__items__title">Лучшие интерьерные решения для офисов </h3>
+                    <div class="blog__info__items__subtitle">
+                        <p class="blog__info__items__subtitle__text">25 Декабрь,2022 </p>
+                        <button class="blog__info__items__subtitle__btn"><img class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg" alt="vector"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </div>
+
+</template>
+
+<script>
+export default {
+  name: 'OurProjects'
+}
+
+
+</script>
+
+<style scope lang="scss">
+
+.our-project{
+    margin-top: 60px;
+}
+
+
+.project {
+    margin-top: 93px;
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            font-weight: 400;
+            font-family: Open Sans;
+            font-style: normal;
+            font-size: 50px;
+            color: #292f36;
+        }
+
+        &__subtitle {
+            text-align: center;
+            max-width: 500px;
+            max-height: 66px;
+            font-weight: 400;
+            font-family: jost;
+            font-style: normal;
+            font-size: 22px;
+            color: #4d5053;
+        }
+    }
+
+    &__products {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 90px;
+
+        &__result {
+            display: flex;
+            flex-direction: column;
+
+            &__img-1 {
+                border-top-right-radius: 90px;
+            }
+
+            &__img-2 {
+                border-top-left-radius: 90px;
+            }
+
+            &__element {
+                margin-top: 24px;
+                max-width: 619px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__text {
+
+                    &__title {
+                        font-weight: 400;
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-size: 25px;
+                        color: #292f36;
+                    }
+
+                    &__subtitle {
+                        font-weight: 400;
+                        font-family: Jost;
+                        font-style: normal;
+                        font-size: 22px;
+                        color: #4d5053;
+                    }
+
+                    &__btn {
+                        width: 70px;
+                        height: 70px;
+                        background-color: #f4f0ec;
+                        border: 0;
+                        border-top-left-radius: 90px;
+                        border-top-right-radius: 90px;
+                        border-bottom-left-radius: 90px;
+                        border-bottom-right-radius: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    height: 457px;
+    margin-top: 95px;
+    background-color: #f7f2ed;
+
+    &__meta {
+        width: 1082px;
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: space-between;
+
+        &__img {
+
+            height: 130px;
+        }
+
+        &__items {
+            width: 246px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &__title {
+                text-align: center;
+                font-style: normal;
+                font-size: 85px;
+                color: #cda274;
+            }
+
+            &__subtitle {
+                text-align: center;
+                font-family: Jost;
+                font-style: normal;
+                font-size: 17px;
+                color: #4d5053;
+            }
+        }
+    }
+}
+
+.blog {
+    margin-top: 70px;
+
+    &__heading {
+        margin-top: 80px;
+        max-height: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        &__title {
+            text-align: center;
+            max-width: 362px;
+            font-weight: 500;
+            font-family: Open Sans;
+            font-style: normal;
+            font-size: 50px;
+            color: #292f36;
+        }
+
+        &__subtitle {
+            max-width: 500px;
+            text-align: center;
+            font-family: Jost;
+            font-style: normal;
+            font-size: 22px;
+            color: #4d5053;
+        }
+    }
+
+    &__info {
+        flex-wrap: wrap;
+        margin-top: 93px;
+        display: flex;
+        justify-content: space-between;
+        gap: 27px;
+
+        &__items {
+            width: 382px;
+            padding: 20px;
+            border: 2px solid #f4f0ec;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+
+            &__title {
+                margin-top: 21px;
+                font-weight: 500;
+                font-family: Open Sans;
+                font-style: normal;
+                font-size: 25px;
+                color: #292f36;
+            }
+
+            &__subtitle {
+                margin-top: 30px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                &__text {
+                    padding-top: 20px;
+                    font-family: Jost;
+                    font-style: normal;
+                    font-size: 16px;
+                    color: #4d5053;
+                }
+
+                &__btn {
+                    width: 52px;
+                    height: 52px;
+                    border: 0;
+                    background-color: #f4f0ec;
+                    border-top-left-radius: 90px;
+                    border-top-right-radius: 90px;
+                    border-bottom-left-radius: 90px;
+                    border-bottom-right-radius: 90px;
+                }
+            }
+        }
+    }
+}
+
+.blog-btns {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    &__item {
+        width: 52px;
+        height: 52px;
+        border-radius: 30px;
+        border-color: #cda274;
+        background-color: #ffff;
+    }
+}
+</style>
