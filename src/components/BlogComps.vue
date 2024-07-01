@@ -28,40 +28,43 @@
 export default {
 name: 'BlogComps',
 data() {
-                return {
+    return {
                     cart: [{
                         title: 'Создадим лучший макет перепланировки',
                         subtitle: '26 Декабрь,2022',
-                        image: '../assets/blog_Image.png',
-                        button: '../assets/Vector_blog.svg'
+                        image: '/img/blog_Image.png',
+                        button: '/img/Vector_blog.svg'
                     }, {
                         title: 'Лучшие интерьерные идеи по низкой цене',
                         subtitle: '22 Декабрь,2022',
-                        image: '../assets/blog_Image2.png',
-                        button: '../assets/Vector_blog.svg'
+                        image: '/img/blog_Image2.png',
+                        button: '/img/Vector_blog.svg'
                     }, {
                         title: 'Создадим лучший макет перепланировки',
                         subtitle: '26 Декабрь,2022',
-                        image: '../assets/blog_Image3.png',
-                        button: '../assets/Vector_blog.svg'
+                        image: '/img/blog_Image3.png',
+                        button: '/img/Vector_blog.svg'
                     }, {
                         title: 'Лучшие интерьерные решения для офисов',
                         subtitle: '26 Декабрь,2022',
-                        image: '../assets/blog_Image4.png',
-                        button: '../assets/Vector_blog.svg'
+                        image: '/img/blog_Image4.png',
+                        button: '/img/Vector_blog.svg'
                     }, {
                         title: 'Лучшие интерьерные идеи по низкой цене',
                         subtitle: '22 Декабрь,2022',
-                        image: '../assets/blog_Image5.png',
-                        button: '../assets/Vector_blog.svg'
+                        image: '/img/blog_Image5.png',
+                        button: '/img/Vector_blog.svg'
                     }, {
                         title: 'Лучшие интерьерные решения для офисов',
                         subtitle: '25 Декабрь,2022',
-                        image: '../assets/blog_Image6.png',
-                        button: '../assets/Vector_blog.svg'
+                        image: '/img/blog_Image6.png',
+                        button: '/img/Vector_blog.svg'
                     }]
-                    }           
-        }
+            }                        
+        
+        
+        },
+
 }
 </script>
 
@@ -140,5 +143,3 @@ data() {
 }
 
 </style>
-
-v-for="(item, index) in items" :key="index"

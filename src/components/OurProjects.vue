@@ -1,150 +1,159 @@
 <template>
     <div class="our-project">
-        
-    <section>
-        <div class="project container">
-            <div class="project__heading">
-                <h3 class="project__heading__title">
-                    Следите за нашими проектами
-                </h3>
-                <p class="project__heading__subtitle">
-                    Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы
-                </p>
-            </div>
-            <div class="project__products">
-                <div class="project__products__result">
-                    <img class="project__products__result__img-1" src="../assets/result1.jpg" alt="kitchen">
-                    <div class="project__products__result__element">
-                        <div class="project__products__result__element__text">
-                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                        </div>
-                        <button class="project__products__result__element__text__btn">
-                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="project__products__result">
-                    <img class="project__products__result__img-2" src="../assets/result2.jpg" alt="kitchen">
-                    <div class="project__products__result__element">
-                        <div class="project__products__result__element__text">
-                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                        </div>
-                        <button class="project__products__result__element__text__btn">
-                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="project__products__result">
-                    <img class="project__products__result__img" src="../assets/result3.jpg" alt="kitchen">
-                    <div class="project__products__result__element">
-                        <div class="project__products__result__element__text">
-                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                        </div>
-                        <button class="project__products__result__element__text__btn">
-                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="project__products__result">
-                    <img class="project__products__result__img" src="../assets/result4.jpg" alt="kitchen">
-                    <div class="project__products__result__element">
-                        <div class="project__products__result__element__text">
-                            <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                            <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                        </div>
-                        <button class="project__products__result__element__text__btn">
-                            <img class="project__products__result__btn__img" src="../assets/Vector_result.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="counter">
-            <div class="counter__meta container">
-                <div class="counter__meta__items">
-                    <h2 class="counter__meta__items__title">12</h2>
-                    <p class="counter__meta__items__subtitle">Лет опыта</p>
+        <section>
+            <div class="project container">
+                <div class="project__heading">
+                    <h3 class="project__heading__title">
+                        Следите за нашими проектами
+                    </h3>
+                    <p class="project__heading__subtitle">
+                        Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы
+                    </p>
                 </div>
-                <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
-                <div class="counter__meta__items">
-                    <h2 class="counter__meta__items__title">85</h2>
-                    <p class="counter__meta__items__subtitle">Успешных проектов</p>
-                </div>
-                <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
-                <div class="counter__meta__items">
-                    <h2 class="counter__meta__items__title">15</h2>
-                    <p class="counter__meta__items__subtitle">Проектов в работе</p>
-                </div>
-                <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
-                <div class="counter__meta__items">
-                    <h2 class="counter__meta__items__title">95</h2>
-                    <p class="counter__meta__items__subtitle">Счастливых клиентов</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="blog container">
-            <div class="blog__heading">
-                <h2 class="blog__heading__title">
-                    Статьи <span class="symbol">&</span> Новости
-                </h2>
-                <p class="blog__heading__subtitle">
-                    Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы
-                </p>
-            </div>
-
-            <div class="blog__info">
-                <div class="blog__info__items">
-                    <img src="../assets/blog_Image.png" alt="kitchen" class="blog__info__items__img">
-                    <h3 class="blog__info__items__title">Создадим лучший макет перепланировки</h3>
-                    <div class="blog__info__items__subtitle">
-                        <p class="blog__info__items__subtitle__text">26 Декабрь,2022 </p>
-                        <button class="blog__info__items__subtitle__btn"><img class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg" alt="vector"></button>
+                <div class="project__products">
+                    <div class="project__products__result">
+                        <img class="project__products__result__img-1" src="../assets/result1.jpg" alt="kitchen">
+                        <div class="project__products__result__element">
+                            <div class="project__products__result__element__text">
+                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                            </div>
+                            <button class="project__products__result__element__text__btn">
+                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
+                                    alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project__products__result">
+                        <img class="project__products__result__img-2" src="../assets/result2.jpg" alt="kitchen">
+                        <div class="project__products__result__element">
+                            <div class="project__products__result__element__text">
+                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                            </div>
+                            <button class="project__products__result__element__text__btn">
+                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
+                                    alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project__products__result">
+                        <img class="project__products__result__img" src="../assets/result3.jpg" alt="kitchen">
+                        <div class="project__products__result__element">
+                            <div class="project__products__result__element__text">
+                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                            </div>
+                            <button class="project__products__result__element__text__btn">
+                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
+                                    alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project__products__result">
+                        <img class="project__products__result__img" src="../assets/result4.jpg" alt="kitchen">
+                        <div class="project__products__result__element">
+                            <div class="project__products__result__element__text">
+                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
+                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                            </div>
+                            <button class="project__products__result__element__text__btn">
+                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
+                                    alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="blog__info__items">
-                    <img src="../assets/blog_Image2.png" alt="kitchen" class="blog__info__items__img">
-                    <h3 class="blog__info__items__title">Лучшие интерьерные идеи по низкой цене</h3>
-                    <div class="blog__info__items__subtitle">
-                        <p class="blog__info__items__subtitle__text">22 Декабрь,2022</p>
-                        <button class="blog__info__items__subtitle__btn"><img class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg" alt="vector"></button>
+            </div>
+        </section>
+
+        <section>
+            <div class="counter">
+                <div class="counter__meta container">
+                    <div class="counter__meta__items">
+                        <h2 class="counter__meta__items__title">12</h2>
+                        <p class="counter__meta__items__subtitle">Лет опыта</p>
                     </div>
-                </div>
-                <div class="blog__info__items">
-                    <img src="../assets/blog_Image3.png" alt="kitchen" class="blog__info__items__img">
-                    <h3 class="blog__info__items__title">Лучшие интерьерные решения для офисов </h3>
-                    <div class="blog__info__items__subtitle">
-                        <p class="blog__info__items__subtitle__text">25 Декабрь,2022 </p>
-                        <button class="blog__info__items__subtitle__btn"><img class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg" alt="vector"></button>
+                    <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
+                    <div class="counter__meta__items">
+                        <h2 class="counter__meta__items__title">85</h2>
+                        <p class="counter__meta__items__subtitle">Успешных проектов</p>
+                    </div>
+                    <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
+                    <div class="counter__meta__items">
+                        <h2 class="counter__meta__items__title">15</h2>
+                        <p class="counter__meta__items__subtitle">Проектов в работе</p>
+                    </div>
+                    <img class="counter__meta__items__img" src="../assets/Line.svg" alt="">
+                    <div class="counter__meta__items">
+                        <h2 class="counter__meta__items__title">95</h2>
+                        <p class="counter__meta__items__subtitle">Счастливых клиентов</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section>
+            <div class="blog container">
+                <div class="blog__heading">
+                    <h2 class="blog__heading__title">
+                        Статьи <span class="symbol">&</span> Новости
+                    </h2>
+                    <p class="blog__heading__subtitle">
+                        Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы
+                    </p>
+                </div>
+
+                <div class="blog__info">
+                    <div class="blog__info__items">
+                        <img src="../assets/blog_Image.png" alt="kitchen" class="blog__info__items__img">
+                        <h3 class="blog__info__items__title">Создадим лучший макет перепланировки</h3>
+                        <div class="blog__info__items__subtitle">
+                            <p class="blog__info__items__subtitle__text">26 Декабрь,2022 </p>
+                            <button class="blog__info__items__subtitle__btn"><img
+                                    class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
+                                    alt="vector"></button>
+                        </div>
+                    </div>
+                    <div class="blog__info__items">
+                        <img src="../assets/blog_Image2.png" alt="kitchen" class="blog__info__items__img">
+                        <h3 class="blog__info__items__title">Лучшие интерьерные идеи по низкой цене</h3>
+                        <div class="blog__info__items__subtitle">
+                            <p class="blog__info__items__subtitle__text">22 Декабрь,2022</p>
+                            <button class="blog__info__items__subtitle__btn"><img
+                                    class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
+                                    alt="vector"></button>
+                        </div>
+                    </div>
+                    <div class="blog__info__items">
+                        <img src="../assets/blog_Image3.png" alt="kitchen" class="blog__info__items__img">
+                        <h3 class="blog__info__items__title">Лучшие интерьерные решения для офисов </h3>
+                        <div class="blog__info__items__subtitle">
+                            <p class="blog__info__items__subtitle__text">25 Декабрь,2022 </p>
+                            <button class="blog__info__items__subtitle__btn"><img
+                                    class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
+                                    alt="vector"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </div>
 
 </template>
 
 <script>
 export default {
-  name: 'OurProjects'
+    name: 'OurProjects'
 }
 
 
 </script>
 
 <style scope lang="scss">
-
-.our-project{
+.our-project {
     margin-top: 60px;
 }
 
@@ -230,6 +239,11 @@ export default {
                         border-top-right-radius: 90px;
                         border-bottom-left-radius: 90px;
                         border-bottom-right-radius: 90px;
+                        transition: 0, 40s;
+
+                        &:hover {
+                            background-color: #cda274;
+                        }
                     }
                 }
             }
@@ -371,7 +385,7 @@ export default {
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+
     &__item {
         width: 52px;
         height: 52px;

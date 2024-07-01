@@ -1,23 +1,22 @@
 <template>
-   <div class="banner container">
-            <h1 class="banner__title">Пусть ваш дом будет уникальным</h1>
-            <h3 class="banner__subtitle">Существует много вариаций Lorem Ipsum, которые можно использовать</h3>
-            <button class="banner__btn">
-                <p class="banner__btn__text">Начать</p>
-                <img class="banner__btn__vector" src="../assets/Vector.svg" alt="vector">
-            </button>
-        </div>  
-  </template>
-  
-  <script> 
-  export default {
-  name: 'Banner'
+    <div class="banner container">
+        <h1 class="banner__title">Пусть ваш дом будет уникальным</h1>
+        <h3 class="banner__subtitle">Существует много вариаций Lorem Ipsum, которые можно использовать</h3>
+        <button class="banner__btn">
+            <p class="banner__btn__text">Начать</p>
+            <img class="banner__btn__vector" src="../assets/Vector.svg" alt="vector">
+        </button>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Banner'
 }
-  </script>
-  
+</script>
 
-  <style scoped lang="scss">
 
+<style scoped lang="scss">
 .banner {
     display: flex;
     flex-direction: column;
@@ -59,14 +58,17 @@
         height: 75px;
         background-color: #292f36;
 
+        &:hover {}
+
         &__text {
             font-weight: 600;
             font-family: jost;
             font-style: normal;
             font-size: 18px;
             color: #f4f0ec;
+
+
         }
     }
 }
-  
-  </style>
+</style>
