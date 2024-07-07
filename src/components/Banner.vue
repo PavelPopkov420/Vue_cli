@@ -2,7 +2,7 @@
     <div class="banner container">
         <h1 class="banner__title">Пусть ваш дом будет уникальным</h1>
         <h3 class="banner__subtitle">Существует много вариаций Lorem Ipsum, которые можно использовать</h3>
-        <button class="banner__btn">
+        <button class="banner__btn" @click="onStartClick()">
             <p class="banner__btn__text">Начать</p>
             <img class="banner__btn__vector" src="../assets/Vector.svg" alt="vector">
         </button>
@@ -11,7 +11,12 @@
 
 <script>
 export default {
-    name: 'Banner'
+    name: 'Banner',
+    methods: {
+        onStartClick() {
+            this.$router.push({ name: 'project' });
+        }
+    }
 }
 </script>
 
@@ -57,6 +62,7 @@ export default {
         width: 182px;
         height: 75px;
         background-color: #292f36;
+        cursor: pointer;
 
         &:hover {}
 

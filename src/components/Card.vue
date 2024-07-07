@@ -14,7 +14,7 @@
                 <h3 class="desing-card__info__name__title">{{ title }}</h3>
                 <p class="desing-card__info__name__subtitle">{{ subtitle }}</p>
             </div>
-            <button class="desing-card__info__btn">
+            <button class="desing-card__info__btn" @click="goToProject()">
                 <img class="desing-card__info__btn__img" src="../assets/Vector_result.svg" alt="">
             </button>
         </div>
@@ -55,6 +55,9 @@ export default {
     methods: {
         markFavourite() {
             this.$emit('markFavourite', this.id)
+        },
+        goToProject() {
+            this.$router.push({ name: 'project' })
         }
     }
 }

@@ -5,7 +5,7 @@ import BlogView from '../views/BlogView.vue'
 import ArticlesView from '@/views/ArticlesView.vue'
 import DesignCardsView from '@/views/DesignCardsView.vue'
 import ProjectDetailsView from '@/views/ProjectDetailsView.vue'
-
+import ErrorView from '@/views/ErrorView.vue'
 
 
 Vue.use(VueRouter)
@@ -36,9 +36,19 @@ const routes = [{
         name: 'project',
         component: ProjectDetailsView
     },
+    {
+        path: '/404',
+        name: 'error',
+        component: ErrorView
+    },
+    {
+        path: '*',
+        redirect: { name: 'error' },
+    }
 ]
 
 const router = new VueRouter({
+    mode: 'history',
     routes
 })
 

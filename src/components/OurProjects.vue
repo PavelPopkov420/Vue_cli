@@ -19,7 +19,7 @@
                                 <h4 class="project__products__result__element__text__title">Современная кухня</h4>
                                 <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
                             </div>
-                            <button class="project__products__result__element__text__btn">
+                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
                                 <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
                                     alt="">
                             </button>
@@ -32,7 +32,7 @@
                                 <h4 class="project__products__result__element__text__title">Современная кухня</h4>
                                 <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
                             </div>
-                            <button class="project__products__result__element__text__btn">
+                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
                                 <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
                                     alt="">
                             </button>
@@ -45,7 +45,7 @@
                                 <h4 class="project__products__result__element__text__title">Современная кухня</h4>
                                 <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
                             </div>
-                            <button class="project__products__result__element__text__btn">
+                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
                                 <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
                                     alt="">
                             </button>
@@ -58,7 +58,7 @@
                                 <h4 class="project__products__result__element__text__title">Современная кухня</h4>
                                 <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
                             </div>
-                            <button class="project__products__result__element__text__btn">
+                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
                                 <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
                                     alt="">
                             </button>
@@ -111,7 +111,7 @@
                         <h3 class="blog__info__items__title">Создадим лучший макет перепланировки</h3>
                         <div class="blog__info__items__subtitle">
                             <p class="blog__info__items__subtitle__text">26 Декабрь,2022 </p>
-                            <button class="blog__info__items__subtitle__btn"><img
+                            <button class="blog__info__items__subtitle__btn" @click="goToArticle()"><img
                                     class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
                                     alt="vector"></button>
                         </div>
@@ -121,7 +121,7 @@
                         <h3 class="blog__info__items__title">Лучшие интерьерные идеи по низкой цене</h3>
                         <div class="blog__info__items__subtitle">
                             <p class="blog__info__items__subtitle__text">22 Декабрь,2022</p>
-                            <button class="blog__info__items__subtitle__btn"><img
+                            <button class="blog__info__items__subtitle__btn" @click="goToArticle()"><img
                                     class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
                                     alt="vector"></button>
                         </div>
@@ -131,7 +131,7 @@
                         <h3 class="blog__info__items__title">Лучшие интерьерные решения для офисов </h3>
                         <div class="blog__info__items__subtitle">
                             <p class="blog__info__items__subtitle__text">25 Декабрь,2022 </p>
-                            <button class="blog__info__items__subtitle__btn"><img
+                            <button class="blog__info__items__subtitle__btn" @click="goToArticle()"><img
                                     class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
                                     alt="vector"></button>
                         </div>
@@ -146,7 +146,15 @@
 
 <script>
 export default {
-    name: 'OurProjects'
+    name: 'OurProjects',
+    methods: {
+        goToDesign() {
+            this.$router.push({ name: 'design' });
+        },
+        goToArticle() {
+            this.$router.push({ name: 'article' })
+        }
+    }
 }
 
 

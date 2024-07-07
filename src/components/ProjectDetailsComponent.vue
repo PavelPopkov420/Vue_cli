@@ -5,11 +5,8 @@
             <h1 class="project-details__title">{{ getTitle }}</h1>
             <p class="project-details__text"> {{ getTextOne }}</p>
             <p class="project-details__text"> {{ getTextTwo }}</p>
-            <div class="slider">
-                <img src="../assets/slider.png" alt="">
-            </div>
+            <Slider :sliderData="pictures" />
         </div>
-        <!-- слайдер -->
 
     </div>
 
@@ -17,10 +14,36 @@
 
 
 <script>
+
+import Slider from '@/components/Slider.vue';
+
 export default {
     name: 'ProjectDetailsComponent',
+
+    components: {
+        Slider
+    },
+
     data() {
         return {
+            pictures: [
+                {
+                    id: 1,
+                    name: 'slider.png',
+                    alt: 'project1',
+                },
+
+                {
+                    id: 2,
+                    name: 'slider1.png',
+                    alt: 'project2',
+                },
+
+                {
+                    id: 3,
+                    name: 'slider2.png',
+                    alt: 'project3',
+                }],
 
         }
     },
