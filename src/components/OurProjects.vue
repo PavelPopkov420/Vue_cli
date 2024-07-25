@@ -12,12 +12,12 @@
                     </p>
                 </div>
                 <div class="project__products">
-                    <div class="project__products__result">
-                        <img class="project__products__result__img-1" src="../assets/result1.jpg" alt="kitchen">
+                    <div class="project__products__result" v-for="(item, index) in projects" :key="index">
+                        <img class="project__products__result__img-1" :src="item.img" alt="kitchen">
                         <div class="project__products__result__element">
                             <div class="project__products__result__element__text">
-                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
+                                <h4 class="project__products__result__element__text__title">{{ item.title }}</h4>
+                                <p class="project__products__result__element__text__subtitle">{{ item.subtitle }}</p>
                             </div>
                             <button class="project__products__result__element__text__btn" @click="goToDesign()">
                                 <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
@@ -25,45 +25,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="project__products__result">
-                        <img class="project__products__result__img-2" src="../assets/result2.jpg" alt="kitchen">
-                        <div class="project__products__result__element">
-                            <div class="project__products__result__element__text">
-                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                            </div>
-                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
-                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
-                                    alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project__products__result">
-                        <img class="project__products__result__img" src="../assets/result3.jpg" alt="kitchen">
-                        <div class="project__products__result__element">
-                            <div class="project__products__result__element__text">
-                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                            </div>
-                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
-                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
-                                    alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project__products__result">
-                        <img class="project__products__result__img" src="../assets/result4.jpg" alt="kitchen">
-                        <div class="project__products__result__element">
-                            <div class="project__products__result__element__text">
-                                <h4 class="project__products__result__element__text__title">Современная кухня</h4>
-                                <p class="project__products__result__element__text__subtitle">Декор / Планировка</p>
-                            </div>
-                            <button class="project__products__result__element__text__btn" @click="goToDesign()">
-                                <img class="project__products__result__btn__img" src="../assets/Vector_result.svg"
-                                    alt="">
-                            </button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -106,31 +68,11 @@
                 </div>
 
                 <div class="blog__info">
-                    <div class="blog__info__items">
-                        <img src="../assets/blog_Image.png" alt="kitchen" class="blog__info__items__img">
-                        <h3 class="blog__info__items__title">Создадим лучший макет перепланировки</h3>
+                    <div class="blog__info__items" v-for="(item, index) in posts" :key="index">
+                        <img :src="item.image" alt="kitchen" class="blog__info__items__img">
+                        <h3 class="blog__info__items__title">{{ item.title }}</h3>
                         <div class="blog__info__items__subtitle">
-                            <p class="blog__info__items__subtitle__text">26 Декабрь,2022 </p>
-                            <button class="blog__info__items__subtitle__btn" @click="goToArticle()"><img
-                                    class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
-                                    alt="vector"></button>
-                        </div>
-                    </div>
-                    <div class="blog__info__items">
-                        <img src="../assets/blog_Image2.png" alt="kitchen" class="blog__info__items__img">
-                        <h3 class="blog__info__items__title">Лучшие интерьерные идеи по низкой цене</h3>
-                        <div class="blog__info__items__subtitle">
-                            <p class="blog__info__items__subtitle__text">22 Декабрь,2022</p>
-                            <button class="blog__info__items__subtitle__btn" @click="goToArticle()"><img
-                                    class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
-                                    alt="vector"></button>
-                        </div>
-                    </div>
-                    <div class="blog__info__items">
-                        <img src="../assets/blog_Image3.png" alt="kitchen" class="blog__info__items__img">
-                        <h3 class="blog__info__items__title">Лучшие интерьерные решения для офисов </h3>
-                        <div class="blog__info__items__subtitle">
-                            <p class="blog__info__items__subtitle__text">25 Декабрь,2022 </p>
+                            <p class="blog__info__items__subtitle__text">{{ item.subtitle }}</p>
                             <button class="blog__info__items__subtitle__btn" @click="goToArticle()"><img
                                     class="blog__info__items__subtitle__btn__img" src="../assets/Vector_blog.svg"
                                     alt="vector"></button>
@@ -140,13 +82,47 @@
 
             </div>
         </section>
+
     </div>
 
 </template>
 
 <script>
+
+import { fetchAllPosts } from '@/services/fetchBlogComps';
+
 export default {
     name: 'OurProjects',
+    data() {
+        return {
+            projects: [{
+                img: '/img/result1.jpg',
+                title: 'Современная кухня',
+                subtitle: 'Декор / Планировка'
+
+            },
+            {
+                img: '/img/result2.jpg',
+                title: 'Современная кухня',
+                subtitle: 'Декор / Планировка'
+
+            },
+            {
+                img: '/img/result3.jpg',
+                title: 'Современная кухня',
+                subtitle: 'Декор / Планировка'
+
+            },
+            {
+                img: '/img/result4.jpg',
+                title: 'Современная кухня',
+                subtitle: 'Декор / Планировка'
+
+            },]
+
+
+        }
+    },
     methods: {
         goToDesign() {
             this.$router.push({ name: 'design' });
@@ -154,13 +130,23 @@ export default {
         goToArticle() {
             this.$router.push({ name: 'article' })
         }
-    }
+    },
+    computed: {
+        posts() {
+            return this.$store.getters.getAllPosts
+        }
+    },
+    created() {
+        this.$store.commit('setAllPost', fetchAllPosts(3));
+
+    },
+
 }
 
 
 </script>
 
-<style scope lang="scss">
+<style lang="scss">
 .our-project {
     margin-top: 60px;
 }
@@ -342,6 +328,7 @@ export default {
         gap: 27px;
 
         &__items {
+
             width: 382px;
             padding: 20px;
             border: 2px solid #f4f0ec;
@@ -384,7 +371,17 @@ export default {
                     border-bottom-right-radius: 90px;
                 }
             }
+
+            &:hover {
+                background-color: #F4F0EC;
+
+                .blog__info__items__subtitle__btn {
+                    background-color: #ffff;
+                    cursor: pointer;
+                }
+            }
         }
+
     }
 }
 

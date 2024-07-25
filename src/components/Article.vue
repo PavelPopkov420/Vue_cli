@@ -9,42 +9,21 @@
                     </p>
                     <div class="blogDetails__mid__content__right__quotes">
                         <h1 class="blogDetails__mid__content__right__quotes__header">“</h1>
-                        <p class="blogDetails__mid__content__right__quotes__text">Какая-то умная и красивая цитата.</p>
+                        <p class="blogDetails__mid__content__right__quotes__text">{{ quote }}</p>
                     </div>
-                    <h1 class="blogDetails__mid__content__right__header">Design sprints are great</h1>
-                    <p class="blogDetails__mid__content__right__text">В оригинале текст выглядит так «Neque porro
-                        quisquam
-                        est
-                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit ...», и переводится как «Нет
-                        никого,
-                        кто любил бы свою боль, кто искал бы ее и хотел бы чтобы она была у него. Потому что это
-                        боль...»
+                    <h1 class="blogDetails__mid__content__right__header">{{ secondTitle }}</h1>
+                    <p class="blogDetails__mid__content__right__text">{{ secondText }}
                     </p>
                     <ul class="blogDetails__mid__content__right__points">
-                        <ol class="blogDetails__mid__content__right__text"> <span
-                                class="blogDetails__mid__content__right__points__text">1.</span>С того времени этот,
-                            похожий на латинский, текст стал стандартом в печатной промышленности для примеров шрифтов и
-                            текстов..</ol>
-                        <ol class="blogDetails__mid__content__right__text"><span
-                                class="blogDetails__mid__content__right__points__text">2.</span>С того времени этот,
-                            похожий
-                            на
-                            латинский,
-                            текст стал стандартом в печатной промышленности для примеров шрифтов и текстов.</ol>
-                        <ol class="blogDetails__mid__content__right__text"><span
-                                class="blogDetails__mid__content__right__points__text">3.</span>C того времени этот,
-                            похожий
-                            на
-                            латинский,
-                            текст стал стандартом в печатной промышленности для примеров шрифтов и текстов..</ol>
+                        <ol v-for="(item, index) in options" :key="index"
+                            class="blogDetails__mid__content__right__text"> <span
+                                class="blogDetails__mid__content__right__points__text">{{ index + 1 }}</span>
+                            {{ item }}
+                        </ol>
                     </ul>
 
 
-                    <p class="blogDetails__mid__content__right__text">В своей статье от 1994-го года журнал «Before &
-                        After»
-                        отследил фразу «Lorem ipsum ...»
-                        до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на
-                        латинском языке. </p>
+                    <p class="blogDetails__mid__content__right__text">{{ thirdText }}</p>
                 </div>
             </div>
         </div>
@@ -64,9 +43,30 @@ export default {
             type: String,
             default: () => ' '
         },
-        // image:{},
-        // quote: {},
-        // secondText:{}
+        image: {
+            type: String,
+            default: () => ' ',
+        },
+        quote: {
+            type: String,
+            default: () => ' ',
+        },
+        secondText: {
+            type: String,
+            default: () => ' ',
+        },
+        secondTitle: {
+            type: String,
+            default: () => ' ',
+        },
+        options: {
+            type: Array,
+            default: () => []
+        },
+        thirdText: {
+            type: String,
+            default: () => ' ',
+        }
 
 
     },

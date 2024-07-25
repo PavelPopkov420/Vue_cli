@@ -7,9 +7,17 @@
                         <h2 class="banner-blog__info__inner__title">
                             Статьи & Новости
                         </h2>
-                        <p class="banner-blog__info__inner__subtitle">
-                            Домой / Блог
-                        </p>
+                        <div class="banner-blog__info__inner__subtitle">
+                            <a href="/">
+                                Домой
+                            </a>
+                            <span>/</span>
+                            <a href="/blog">
+                                Блог
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -17,21 +25,18 @@
 
         <section>
             <div class="latest-post container">
+
                 <h2 class="latest-post__title">
-                    Последний пост
+                    {{ lastPost.mainTitle }}
                 </h2>
                 <div class="latest-post__info">
-                    <img src="../assets/Image_last_post.png" alt="kitchen" class="latest-post__info__image">
+                    <img :src="lastPost.img" alt="kitchen" class="latest-post__info__image">
                     <div class="latest-post__info__article">
                         <h3 class="latest-post__info__article__title">
-                            Low Cost Latest Invented Interior Designing Ideas
+                            {{ lastPost.title }}
                         </h3>
                         <p class="latest-post__info__article__subtitle">
-                            С того времени этот, похожий на латинский, текст стал стандартом в печатной промышленности
-                            для примеров шрифтов и текстов. Перед появлением электронных издательств дизайнеры
-                            импровизировали в работе над макетами, изображая текст при помощи волнистых линий.
-                            С появлением самоклеющихся наклеек с напечатанным текстом «Lorem ipsum» появился более
-                            реалистичный способ обозначения расположения текста на странице.
+                            {{ lastPost.text }}
                         </p>
                         <div class="latest-post__info__article__footer">
 
@@ -45,8 +50,22 @@
 </template>
 
 <script>
+
+import { fetchLastPost } from '@/services/fetchBlogComps';
+
+
 export default {
-    name: 'Blog'
+    name: 'Blog',
+    computed: {
+        lastPost() {
+            return this.$store.getters.getLastPost;
+        }
+    },
+
+    created() {
+        this.$store.commit('setLastPost', fetchLastPost());
+
+    },
 }
 </script>
 
@@ -87,6 +106,12 @@ export default {
                 font-style: normal;
                 font-size: 22px;
                 color: #4d5053;
+                cursor: pointer;
+
+                a:visited {
+                    color: inherit;
+                }
+
             }
         }
     }

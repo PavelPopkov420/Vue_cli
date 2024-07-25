@@ -3,7 +3,7 @@
     <div class="container">
         <div id="app">
             <div class="blog__info">
-                <div class="blog__info__items container" v-for="item in cart" :key="item.id">
+                <div class="blog__info__items container" v-for="item in carts" :key="item.id">
                     <img :src='item.image' alt="kitchen" class="blog__info__items__img">
                     <h3 class="blog__info__items__title">{{ item.title }}</h3>
                     <div class="blog__info__items__subtitle">
@@ -26,50 +26,23 @@
 
 <script>
 
+import { fetchAllPosts } from '@/services/fetchBlogComps';
+
 export default {
     name: 'BlogComps',
-    data() {
-        return {
-            cart: [{
-                title: 'Создадим лучший макет перепланировки',
-                subtitle: '26 Декабрь,2022',
-                image: '/img/blog_Image.png',
-                button: '/img/Vector_blog.svg'
-            }, {
-                title: 'Лучшие интерьерные идеи по низкой цене',
-                subtitle: '22 Декабрь,2022',
-                image: '/img/blog_Image2.png',
-                button: '/img/Vector_blog.svg'
-            }, {
-                title: 'Создадим лучший макет перепланировки',
-                subtitle: '26 Декабрь,2022',
-                image: '/img/blog_Image3.png',
-                button: '/img/Vector_blog.svg'
-            }, {
-                title: 'Лучшие интерьерные решения для офисов',
-                subtitle: '26 Декабрь,2022',
-                image: '/img/blog_Image4.png',
-                button: '/img/Vector_blog.svg'
-            }, {
-                title: 'Лучшие интерьерные идеи по низкой цене',
-                subtitle: '22 Декабрь,2022',
-                image: '/img/blog_Image5.png',
-                button: '/img/Vector_blog.svg'
-            }, {
-                title: 'Лучшие интерьерные решения для офисов',
-                subtitle: '25 Декабрь,2022',
-                image: '/img/blog_Image6.png',
-                button: '/img/Vector_blog.svg'
-            }]
+    computed: {
+        carts() {
+            return this.$store.getters.getAllPosts
         }
-
-
     },
     methods: {
         goToArticle() {
             this.$route.push({ name: 'article' })
         }
-    }
+    },
+    created() {
+        this.$store.commit('setAllPost', fetchAllPosts())
+    },
 
 }
 </script>

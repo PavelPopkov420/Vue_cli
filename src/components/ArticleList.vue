@@ -1,7 +1,9 @@
 <template>
     <div class="blogDetails__mid__content container">
         <div>
-            <Article v-for="item in filterArticle" :key="item.title" :title="item.title" :text="item.text" />
+            <Article v-for="item in filterArticle" :key="item.title" :title="item.title" :text="item.text"
+                :quote="item.quote" :secondText="item.secondText" :secondTitle="item.secondTitle"
+                :options="item.options" :thirdText="item.thirdText" />
         </div>
         <div>
             <div class="blogDetails__mid__content__left">
@@ -22,6 +24,8 @@
 <script>
 
 import Article from '@/components/Article.vue'
+import fetchArticle from '../services/fetchArticle'
+
 
 export default {
     name: 'ArticleList',
@@ -31,61 +35,10 @@ export default {
     data() {
         return {
             tags: ['Кухня', 'Спальня', 'Здание', 'Архетиктура', 'Планировка'],
-            articlesAll: [{
-                title: 'Создадим лучший макет перепланировки - Кухня',
-                text: `КУХНЯ В своей статье от 1994-го года журнал «Before & After» отследил фразу «Lorem ipsum ...»
-            до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на латинском языке. 
-            В оригинале текст выглядит так «Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit ...», и переводится как «Нет никого, кто любил бы свою боль, 
-            кто искал бы ее и хотел бы чтобы она была у него. Потому что это боль...»
-            `,
-                tag: 'Кухня',
-            },
-            {
-                title: 'Создадим лучший макет перепланировки - Сальня',
-                text: `СПАЛЬНЯ В своей статье от 1994-го года журнал «Before & After» отследил фразу «Lorem ipsum ...»
-            до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на латинском языке. 
-            В оригинале текст выглядит так «Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit ...», и переводится как «Нет никого, кто любил бы свою боль, 
-            кто искал бы ее и хотел бы чтобы она была у него. Потому что это боль...»
-            `,
-                tag: 'Спальня',
-            },
-            {
-                title: 'Создадим лучший макет перепланировки - Архитектура',
-                text: `ЗДАНИЕ В своей статье от 1994-го года журнал «Before & After» отследил фразу «Lorem ipsum ...»
-            до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на латинском языке. 
-            В оригинале текст выглядит так «Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit ...», и переводится как «Нет никого, кто любил бы свою боль, 
-            кто искал бы ее и хотел бы чтобы она была у него. Потому что это боль...»
-            `,
-                tag: 'Архитектура',
-            },
-            {
-                title: 'Создадим лучший макет перепланировки - Планировка',
-                text: `ЗДАНИЕ В своей статье от 1994-го года журнал «Before & After» отследил фразу «Lorem ipsum ...»
-            до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на латинском языке. 
-            В оригинале текст выглядит так «Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit ...», и переводится как «Нет никого, кто любил бы свою боль, 
-            кто искал бы ее и хотел бы чтобы она была у него. Потому что это боль...»
-            `,
-                tag: 'Планировка',
-            },
-            {
-                title: 'Создадим лучший макет перепланировки - Здание',
-                text: `ЗДАНИЕ В своей статье от 1994-го года журнал «Before & After» отследил фразу «Lorem ipsum ...»
-            до философского трактата Цицерона О пределах добра и зла, написанного в 45 году до нашей эры на латинском языке. 
-            В оригинале текст выглядит так «Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit ...», и переводится как «Нет никого, кто любил бы свою боль, 
-            кто искал бы ее и хотел бы чтобы она была у него. Потому что это боль...»
-            `,
-                tag: 'Здание',
-            }
-
-            ],
             filterArticle: [],
             nameButtons: ['Кухня', 'Спальня', 'Здание', 'Архитектура', 'Планировка'],
-            currentTab: 'none'
+            currentTab: 'none',
+            articlesAll: []
         }
     },
     methods: {
@@ -95,9 +48,14 @@ export default {
 
         },
     },
+    computed: {
 
+
+    },
     created() {
 
+        this.$store.commit('setArticlessListData', fetchArticle());
+        this.articlesAll = this.$store.getters.getArticles;
         this.filterByTag('Кухня')
 
     },

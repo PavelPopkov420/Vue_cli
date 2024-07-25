@@ -34,7 +34,7 @@ export default {
         }
     },
     created() {
-        this.selectedCategory = this.categories[0]
+        this.selectedCategory = this.categories[1]
     },
 }
 </script>

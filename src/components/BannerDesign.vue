@@ -5,9 +5,9 @@
                 Наш проект
             </h2>
             <div class="banner-design__intro__subtitle">
-                <a href="" class="banner-design__intro_subtitle__link">Домой</a>
+                <a href="/" class="banner-design__intro_subtitle__link">Домой</a>
                 <p class="banner-design__intro_subtitle__el">/</p>
-                <a href="" class="banner-design__intro_subtitle__link">Проект</a>
+                <a href="/project" class="banner-design__intro_subtitle__link">Проект</a>
             </div>
         </div>
     </div>

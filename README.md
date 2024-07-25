@@ -1,24 +1,72 @@
-# interno
+## Разработка веб-приложения для студии дизайна интерьера с использованием Vue.js 
 
-## Project setup
+## SPA приложение на Vue.js 3.
+
+## Иcпользуемые технологии
+
+- Vue.js 3
+- Vuex
+- Vue Router
+- SCSS
+- Flexbox
+- Git
+
+## Ссылка на макет проекта
+
+Посмотреть [Макет](https://www.figma.com/design/tdlexmtMZVr6lsyF1ZCpEj/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82-%D0%B4%D0%BB%D1%8F-%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B9-%D0%B0%D1%82%D1%82%D0%B5%D1%81%D1%82%D0%B0%D1%86%D0%B8%D0%B8-%D0%BD%D0%B0-Frontend-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B5-(1)?node-id=101-14&t=SH9XHjMxVq5xWo7L-0)
+
+
+## Реализованные задачи
+
+1. Применение HTML, CSS, JavaScript, Vue.js.
+2. Использование flexbox, формат изображений svg, png.
+3. Реализован компонентный подход для добавления похожих блоков на сайте:
+   - Header
+   - Footer
+   - Article
+   - ArticleList
+   - Banner
+   - BannerDesign
+   - Blog
+   - BlogComps
+   - Card
+   - Categories
+   - OurProjects
+   - ProjectDetailsComponent
+
+4. Все ссылки работают через VueRouting и являются переходами на страницы. Нерабочая ссылка ведет на страницу NotFound (404).
+
+5. На странице Article
+- Добавлены несколько произвольных статей, с описанием. По нажатию на кнопки в разделе «Тэги» происходит сортировка статей по хештегам "Кухня", "Снальня", "Здание", "Архитектура", "Планировка".
+
+6. На странице Project (Наш проект)
+   - Реализована пагинация для перемещения по страницам в категориях "Ванная комната", "Спальня", "Кухня", "Гостиная".
+   - Добавлен функционал лайков (звёздочки). При наведении на любой компонент проекта изначально звёздочка прозрачная, при нажатии на неё, она окрашивается черным цветом.
+
+7. Кнопка «Домой» на странице NotFound(404) ведет на главную страницу.
+
+8. Сайт выполнен в десктопной версии.
+
+
+
+## Настройка проекта
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция и выполнение горячей перезагрузки для разработки
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Компиляция и сжатие для продакшена
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Настройка конфигурации
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Посмотреть [Configuration Reference](https://cli.vuejs.org/config/)
